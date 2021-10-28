@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-text-size-adjust:100%
+}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.sound_only {
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0;
+    line-height: 0;
+    border: 0 !important;
+    overflow: hidden !important;
+}
+.br_small{display: none;}
+#hd{background-color: #000; position: absolute; z-index: 100; left: 0; right: 0; top: 0;}
+#hd h1 {line-height: 3rem;}
+#hd.bg_black{background-color: #000;}
+#logo {width: 260px;}
+.st0{fill:none;stroke:#fff;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+.st1{fill:none;stroke:#fff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#h1{
+    stroke-dasharray: 49.29999923706055; 
+    stroke-dashoffset: 49.29999923706055;
+    animation: dash 0.5s linear forwards;
+}
+#h2{
+    stroke-dasharray: 16.700000762939453;
+    stroke-dashoffset: 16.700000762939453;
+    animation: dash 0.5s 0.5s linear forwards;
+}
+#h3{
+    stroke-dasharray: 49.29999923706055; 
+    stroke-dashoffset: 49.29999923706055;
+    animation: dash 0.5s 1s linear forwards;
+}
+#e1{
+    stroke-dasharray: 17.799999237060547; 
+    stroke-dashoffset: 17.799999237060547;
+    animation: dash 0.5s 1.5s linear forwards;
+}
+#e2{
+    stroke-dasharray: 48.099998474121094; 
+    stroke-dashoffset: 48.099998474121094;
+    animation: dash 0.5s 2s linear forwards;
+}
+#e3{
+    stroke-dasharray: 18.89999771118164; 
+    stroke-dashoffset: 18.89999771118164;
+    animation: dash 0.5s 2.5s linear forwards;
+}
+#e4{
+    stroke-dasharray: 17.800003051757812; 
+    stroke-dashoffset: 17.800003051757812;
+    animation: dash 0.5s 3s linear forwards;
+}
+#o1{
+    stroke-dasharray: 122.61158752441406; 
+    stroke-dashoffset: 122.61158752441406;
+    animation: dash 0.5s 3.5s linear forwards;
+}
+#j1{
+    stroke-dasharray: 18.599990844726562; 
+    stroke-dashoffset: 18.599990844726562;
+    animation: dash 0.5s linear forwards;
+}
+#j2{
+    stroke-dasharray: 64.91938781738281; 
+    stroke-dashoffset: 64.91938781738281;
+    animation: dash 1s 0.5s linear forwards;
+}
+#u1{
+    stroke-dasharray: 109.84675598144531; 
+    stroke-dashoffset: 109.84675598144531;
+    animation: dash 1.5s 1.5s linear forwards;
+}
+#n1{
+    stroke-dasharray: 152.28323364257812; 
+    stroke-dashoffset: 152.28323364257812;
+    animation: dash 1s 3s linear forwards;
+}
+#y1{
+    stroke-dasharray: 28.48807716369629; 
+    stroke-dashoffset: 28.48807716369629;
+    animation: dash 0.5s linear forwards;
+}
+#y2{
+    stroke-dasharray: 52.4353027343753; 
+    stroke-dashoffset: 52.435302734375;
+    animation: dash 0.5s 0.5s linear forwards;
+}
+#o2{
+    stroke-dasharray: 123.09960174560547; 
+    stroke-dashoffset: 123.09960174560547;
+    animation: dash 0.5s 1s linear forwards;
+}
+#u2{
+    stroke-dasharray: 110.00354766845703; 
+    stroke-dashoffset: 110.00354766845703;
+    animation: dash 1s 1.5s linear forwards;
+}
+#n2{
+    stroke-dasharray: 152.28323364257812; 
+    stroke-dashoffset: 152.28323364257812;
+    animation: dash 1s 2.5s linear forwards;
+}
+#g1{
+    stroke-dasharray: 116.72770690917969; 
+    stroke-dashoffset: 116.72770690917969;
+    animation: dash 1s 3.5s linear forwards;
+}
+
+@keyframes dash{
+    to {
+        stroke-dashoffset : 0;
+    }
+}
+#hd h1 a:hover .st0{stroke: gold;}
+#hd h1 a:hover .st1{stroke: gold;}
+#gnb li{font-size: 1.5rem; margin-right: 5rem;}
+#gnb li:last-child{margin-right: 0;}
+#gnb li a{color: #fff;}
+#gnb li a.active{color: gold}
+#gnb2{display: none;}
+#allMenu{display: none; position: absolute; top:5px; right: 1rem; background-color: transparent; border: 0; padding: 0;}
+#allMenu span{
+    display: block; 
+    width: 30px;  
+    height: 3px; 
+    background: #fff; 
+    margin: 10px 0;}
+#mainbanner{
+    position: relative;
+    background-image: url(/project_3/img/mainback.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+}
+#mainbanner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #66330060;
+
+}
+#camfit_logo{width: 120px;}
+
+.banner_con{position:relative; z-index: 2;}
+.banner_text{font-family: 'Do Hyeon', sans-serif; padding-top: 6.25rem; color: #fff;}
+.banner_text h2{font-size: 5.625rem;}
+.banner_text p{font-size: 2rem;}
+.banner_img{overflow: hidden;}
+.banner_img img{
+    transform: translateX(950px);
+    animation: slide 2.5s linear forwards;
+}
+@keyframes slide{
+    to{
+        transform: translateX(0px);
+    }
+}
+.gnb1 ul{height: 70px;}
+.gnb1 ul li{
+    width: 32%;
+    background-color: #20AF73;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;
+    transition-duration: 0.3s;
+}
+.gnb1 ul li a{
+    color: #fff;
+    font-size: 2.5rem;
+}
+@media(hover: hover){
+    .gnb1 ul li:hover{background-color: #fff; margin-left: 5px; margin-top: 5px; box-shadow: none;}
+    .gnb1 ul li:hover a{color: #20AF73; font-weight: 700;}
+}
+
+#about_us{background-color: #fff; padding: 100px 0;}
+.img_text img{max-width: 340px;}
+.title_text h3{font-family: 'Do Hyeon', sans-serif; font-size: 5rem; color: #722929;}
+.title_text h3 span{color: #20AF73;}
+.title_text h4{font-size: 2.5rem; font-weight: 700;}
+.title_text p{font-size: 1.5rem;}
+.contents h5{font-size: 1.5rem; font-weight: 700;}
+.contents p{font-size: 1.25rem;}
+.event_info img{max-width: 1110px; margin-bottom: 1rem;}
+.event_info h5, .event_info p{color: #990000;}
+.go_btn a{font-size: 2rem; font-weight: 700; padding: 5px 20px; color: #fff; background-color: #000; border-radius: 20px;}
+
+#event{background-color: #FFF7ED; padding: 100px 0;}
+#checklist{background-color: #1b2024; padding: 1rem 0;}
+#checklist dt{font-size: 2.5rem; font-weight: 700; color: #d7d5d7;}
+#checklist dd p{font-size: 1.2rem; margin-bottom: 0; line-height: 2rem; color: #d2d2d2;}
+
+#aside{
+    position: fixed;
+    right: 0;
+    top:40%;
+    width: 160px;
+    z-index: 20;
+    border: 1px solid #000;
+}
+#aside a{
+    display: block;
+    font-size: 1.5rem;
+    background-color: #20AF73;
+    color: #fff;
+    padding: 10px 0;
+    line-height: 1.1;
+    border-bottom: 1px solid #d7d5d7;
+
+}
+#aside a:last-child{
+    border-bottom: 0;
+
+}
+
+#ft{background-color: #000; padding: 1rem 0;}
+.ft_text p{font-size: 1rem; color: #d7d5d7;}
+.contact {padding: 10px 0;}
+.contact a{color: #fff; margin: 0 20px; font-size: 1.5rem;}
+.contact > span{color: #fff; margin: 0 20px; font-size: 1.5rem;}
+.copyright{margin-bottom: 0; color: #fff;}
+
+#hjy_pop{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    max-width: 780px;
+    max-height: 700px;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    background: white;
+    color: #000;
+    z-index: 100000;
+    padding: 20px;
+}
+.pops_title{font-size: 1.5rem; font-weight: 800; margin-bottom: 2rem;}
+#hjy_pop .d1{margin-bottom: 5px; font-weight: 500;}
+#hjy_pop .d2{padding-left: 20px;}
+.popClose{display: none;}
+.workinfo2{padding-left: 20px;}
+.workinfo2 dt{font-weight: 500;}
+.workinfo3{margin-bottom: 0;}
+.workinfo3 li{width: 200px; border: 1px solid #d2d2d2; border-radius: 5px; background-color: #000; line-height: 2rem;}
+.workinfo3 li a{color: #fff;}
+#hjy_pop .close_btn{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 3rem;
+    line-height: 1;
+    color: #fff;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+#popbg{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+@media(max-width: 1199px){
+    .gnb1 ul{height: auto;}
+    .banner_text h2{font-size: 5rem;}
+    .title_text h3 {font-size: 4.5rem;}
+    .title_text h4 {font-size: 2.25rem;}
+    .title_text p{font-size: 1.25rem;}
+    .contents p{font-size: 1rem;}
+    .contents h5{font-size: 1.25rem;}
+    .img_text img{max-width: 280px;}
+    .event_info img {max-width: 920px;}
+    .go_btn a {font-size: 1.75rem;}
+    #checklist dt {font-size: 2.25rem;}
+    #checklist dd p {font-size: 1rem;}
+    #aside{top:0;}
+    #hjy_pop .d2{font-size: 0.9rem;}
+}
+@media(max-width: 991px){
+    .banner_text h2{font-size: 3.75rem;}
+    .banner_text p{font-size: 1.75rem;}
+    .banner_img img {
+        transform: translateX(800px);
+        max-width: 580px;
+    }
+    .gnb1 ul li{border-radius: 15px;}
+    .gnb1 ul li a {font-size: 1.75rem;}
+    .title_text h3 {font-size: 3.5rem;}
+    .title_text h4 {font-size: 1.75rem;}
+    .title_text p{font-size: 1rem;}
+    .contents p{font-size: 0.75rem;}
+    .img_text img{max-width: 210px;}
+    .event_info img {max-width: 680px;}
+    .contents .event_info p{font-size: 1rem;}
+    .go_btn a {font-size: 1.5rem;}
+    #checklist dt {font-size: 2rem;}
+    #checklist dd p {font-size: 1rem;}
+    #aside{display: none !important;}
+}
+@media(max-width: 767px){
+    .br_small{display: block;}
+    #camfit_logo{width: 100px;}
+    #logo{width: 160px;}
+    .banner_text h2{font-size: 2rem;}
+    .banner_text p{font-size: 1.25rem;}
+    .banner_img img {
+        transform: translateX(400px);
+        max-width: 300px;
+    }
+    .gnb1 ul li{border-radius: 5px;}
+    .gnb1 ul li a {font-size: 1rem;}
+    #about_us, #event{padding: 50px 0;}
+
+    .title_text h3 {font-size: 2rem;}
+    .title_text h4 {font-size: 1.25rem;}
+    .title_text p{font-size: 1rem;}
+    .contents p{font-size: 0.75rem;}
+    .contents h5{font-size: 0.75rem;}
+    .img_text img{max-width: 110px;}
+    .event_info img {max-width: 375px;}
+    .contents .event_info p{font-size: 0.6rem;}
+    .go_btn a {font-size: 1rem;}
+    #checklist dt {font-size: 1.5rem;}
+    #checklist dd p {font-size: 0.7rem; line-height: 1.2rem;}
+    .contact a {font-size: 1.25rem;}
+    .contact > span {font-size: 1.25rem;}
+    #hjy_pop{
+        position: absolute;
+        max-width: 340px;
+        max-height: 900px;
+        transform: translate(-50%, 10%);
+        padding: 10px;
+    }
+    .pops_title{font-size: 1.25rem;}
+    .workinfo3 li{max-width: 100px;}
+}
+@media(max-width: 424px){
+    #camfit_logo{width: 80px;}
+    #logo{width: 120px;}
+    .banner_text h2{font-size: 2rem;}
+    .banner_text p{font-size: 1.25rem;}
+    .banner_img img {
+        transform: translateX(360px);
+        max-width: 260px;
+    }
+    .gnb1 ul li{border-radius: 5px;}
+    .gnb1 ul li a {font-size: 1rem;}
+    #about_us, #event{padding: 50px 0;}
+
+    .title_text h3 {font-size: 2rem;}
+    .title_text h4 {font-size: 1.25rem;}
+    .title_text p{font-size: 1rem;}
+    .contents p{font-size: 0.5rem;}
+    .contents h5{font-size: 0.65rem;}
+    .img_text img{max-width: 90px;}
+    .event_info img {max-width: 345px;}
+    .contents .event_info p{font-size: 0.6rem;}
+    .go_btn a {font-size: 1rem;}
+    #checklist dt {font-size: 1.25rem;}
+    #checklist dd p {font-size: 0.5rem; line-height: 1rem;}
+}
